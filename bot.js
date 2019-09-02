@@ -56,6 +56,9 @@ client.on('message', message => { // هاذا للبرودكسات
 			});
 		})
 	}
+	client.on('ready', () => {
+    client.user.setGame(`1bc`,'https://www.twitch.tv/DRAZOX');
+});
 });
 client.on('guildMemberAdd', (member) => {
 member.addRole(member.guild.roles.find('name', 'not member'));
